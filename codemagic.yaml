@@ -3,8 +3,8 @@ workflows:
     name: Android APK Build
     max_build_duration: 60
     environment:
-      android_env:
-        - JAVA_VERSION: "17"
+      vars:
+        JAVA_VERSION: "17"
     scripts:
       - name: Set up local.properties
         script: |
