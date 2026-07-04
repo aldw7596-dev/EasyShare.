@@ -13,7 +13,6 @@ workflows:
       - name: Build Android APK
         script: |
           cd EasyShare
-          ./gradlew assembleDebug
+          gradle assembleDebug
     artifacts:
       - EasyShare/app/build/outputs/apk/**/*.apk
- 
