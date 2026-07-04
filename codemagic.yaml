@@ -8,11 +8,9 @@ workflows:
     scripts:
       - name: Set up local.properties
         script: |
-          cd EasyShare
           echo "sdk.dir=$ANDROID_SDK_ROOT" > local.properties
       - name: Build Android APK
         script: |
-          cd EasyShare
           gradle assembleDebug
     artifacts:
-      - EasyShare/app/build/outputs/apk/**/*.apk
+      - app/build/outputs/apk/**/*.apk
